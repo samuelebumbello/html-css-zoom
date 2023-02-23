@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    background-color: rgb(0, 0, 0);
+    height: calc(100vh - 100px);
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.partecipant{
+    position: relative;
+    padding: 0 2px 4px 2px;
+    color: white;
+}
+
+.partecipant .text-img{
+    font-size: 13px;
+    bottom: 8px;
+    position: absolute;
+}
+
+.partecipant .text-img{
+    
+    background-color: rgba(0,0,0,.5);
+    padding: 4px;
+}
+
+/* FOOTER */
+
+.menu-bottom{
+    height: 80px;
+    background-color:#222222;
+    display: flex;
+    justify-content: space-between;
+}
