@@ -6,7 +6,7 @@
 
 main{
     background-color: rgb(0, 0, 0);
-    height: calc(100vh - 135px);
+    height: calc(100vh - 145px);
     overflow: auto;
 }
 
@@ -42,7 +42,7 @@ body{
 /* MAIN */
 .partecipant{
     position: relative;
-    display: inline;
+    display: inline-block;
 }
 
 .partecipant span{
@@ -56,18 +56,58 @@ body{
 
 /* FOOTER */
 
-.menu-bottom{
+footer{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
+    background-color:#222222 ;
     height: 80px;
-    background-color:#222222;
+    color: white;
+    justify-content: space-between;
 }
 
-.menu-bottom a{
-    font-size: 25px
-    text-decoration: none;
-    color: white;
-    list-style: none;
+
+footer .footer-left{
+    display: flex;
+    flex-shrink: 0;
+}
+
+footer .footer-center{
+    display: flex;
+    flex-shrink: ;
+}
+
+footer .footer-right{
+    display: flex;
+    flex-shrink: 0;
+}
+
+.icon.active i{
+    color: rgb(114, 185, 6);
+}
+
+footer .icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+footer .icon i{
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+footer .icon span{
+    font-size: 13px;
+}
+
+footer .footer-right button{
+    background-color: grey;
+    color: red;
+    border: 0;
+    height: 100%;
+    padding: 30px;
+    cursor: pointer;
 }
